@@ -1,0 +1,151 @@
+  /* 1.
+        apply global configs
+      */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+  
+    /* 2. 
+        - apply Segoe UI font for global style 
+    */
+    html,
+    body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+   
+    /* 3.
+        - apply any background images from https://www.pexels.com/ (Note:* choose a landscape type of images)
+        - all text to white
+        - height of the parent container should be 100% in view port height
+        - apply 32 pixels of padding in all sides except top using rem unit
+        - apply a space on top using padding with a value of 15rem using pixels unit.
+        - all text should place to center
+    */
+    header{
+        background: url("https://images.pexels.com/photos/831243/pexels-photo-831243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center/cover;
+        color: white;
+        height: 100vh;
+        text-align: center;
+        padding: 2rem;
+        padding-top: 15rem;
+    }
+    /* 4.
+        - apply a font size of 3rem in all heading tags
+    */
+    header h1 {
+        font-size: 3rem;
+    }
+   
+    /* 5. 
+        - apply a margin of 1rem for top and bottom and 0 to left and right
+    */
+    header p {
+        margin: 1rem 0;
+    }
+   
+   
+    /* 6. achor tag
+        - button should be displayed inline block
+        - remove underline
+        - apply a white background
+        - apply any color you want on the text
+        - apply a space inside of 0.75rem for top and bottom and 2rem for left and right;
+    
+    */
+    a{
+        display: inline-block;
+        text-decoration: none;
+        background: white;
+        color: red;
+        padding: 0.75rem 2rem;
+    }
+ 
+    /* 7. section
+    
+        - apply a space in all sides of 2 rem
+    
+    */
+    section {
+        padding: 2rem; 
+    }
+
+    /* 8. media queries
+        - inspect the browser and use the mobile inspect tool 
+        - pixel 2 XL, iphone 5 SE, iphone X, ipad,ipad pro
+        - all identified devices above should be configured and use
+        necessary changes on their default css rule for mobile responsiveness
+        - use inline styling for this one
+    */
+   /* iphone 5 SE */
+   @media (min-width: 320px) 
+    {
+        header {
+            padding-top: 2rem;
+        }
+        p, h3 {
+            font-size: 1.5rem;
+        }
+       
+    }
+    /* iphone x */
+    @media (min-width: 375px) 
+    {
+        header {
+            height: 60vh;
+
+        }
+    
+    }
+    
+     /* pixel 2 xl */
+     @media (min-width: 812px)
+     {
+
+     }
+      /* ipad*/
+      @media (min-width: 768px)
+      {
+        p, h3 {
+            font-size: 2rem;
+        }
+        header {
+            padding-top: 10rem;
+        }
+      }
+       /* ipad pro */
+     @media (min-width:1024px)
+     {
+        header h1 {
+            font-size: 3rem;
+        }
+         p, h3{
+             font-size: 2rem;
+         }
+         header {
+            padding-top: 18rem;
+        }
+     }
+     
+     @media (min-width:1200px)
+     {
+        header {
+            height: 100vh;
+            padding: 2rem;
+            padding-top: 15rem;
+        }
+        header h1{
+            font-size: 3rem;
+        }
+        p, h3 {
+            font-size: 1rem;
+        }
+
+     }
+
+
+
+    
+
+    
